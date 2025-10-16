@@ -51,6 +51,11 @@ Simulates a digital music store to explore queries related to sales, customer be
 3. Run queries directly to explore sales, customers, and music trends.
 
 ---
+## ERD Diagram
+
+![Dashboard Preview](https://github.com/Jeseenacodes/Internship/blob/main/Task%203/ERD%20chinook.png) 
+
+---
 
 ## 🧠 SQL Analysis
 
