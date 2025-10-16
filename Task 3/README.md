@@ -72,6 +72,10 @@ JOIN artist AS ar ON a.ArtistId = ar.ArtistId
 GROUP BY t.TrackId, t.Name, a.Title, ar.Name
 ORDER BY total_revenue DESC
 LIMIT 5;
+
+
+<img width="524" height="169" alt="Top Selling Tracks (by total revenue)" src="https://github.com/user-attachments/assets/9c0548d7-21aa-452b-acf4-021b82e61fca" />
+
 ```
  2. Top Selling Tracks (by Units Sold)
 ```sql
