@@ -74,6 +74,8 @@ ORDER BY total_revenue DESC
 LIMIT 5;
 
 ```
+![Dashboard Preview](https://github.com/Jeseenacodes/Internship/blob/main/Task%203/1.%20Top%20Selling%20Tracks%20(by%20total%20revenue).png)
+
  2. Top Selling Tracks (by Units Sold)
 ```sql
 SELECT 
@@ -89,6 +91,9 @@ GROUP BY t.TrackId, t.Name, a.Title, ar.Name
 ORDER BY total_units_sold DESC
 LIMIT 5;
 ```
+
+![Dashboard Preview](https://github.com/Jeseenacodes/Internship/blob/main/Task%203/2.%20Top%20Selling%20Tracks%20(by%20units%20sold).png?raw=true)
+
  3. Revenue by Region
 ```sql
 SELECT 
@@ -99,6 +104,9 @@ JOIN customer AS c ON i.customerid = c.customerid
 GROUP BY i.billingcountry
 ORDER BY revenue DESC;
 ```
+
+![Dashboard Preview](https://github.com/Jeseenacodes/Internship/blob/main/Task%203/3.%20Revenue%20per%20region.png?raw=true)
+
 4. Monthly Revenue Trend
 ```sql
 SELECT 
@@ -110,6 +118,8 @@ JOIN invoiceline AS il ON i.invoiceid = il.invoiceid
 GROUP BY DATE_TRUNC('month', i.invoicedate)
 ORDER BY month DESC;
 ```
+
+![Dashboard Preview](https://github.com/Jeseenacodes/Internship/blob/main/Task%203/4.%20Monthly%20Revenue.png?raw=true)
 
  5. Listeners Who Love Jazz, Rock, and Pop
 ```sql
@@ -128,6 +138,8 @@ JOIN customer c   ON c.customerid = i.customerid
 JOIN genre_tracks gt ON gt.trackid = il.trackid;
 ```
 
+![Dashboard Preview](https://github.com/Jeseenacodes/Internship/blob/main/Task%203/5.%20Name%20emailid%20country%20genre.png?raw=true) 
+
 6. Top Customers by Genre
 ```sql
 SELECT customer_name, email, country, genre, rank
@@ -145,6 +157,7 @@ FROM (
 ) ranked
 WHERE rank <= 5;
 ```
+![Dashboard Preview](https://github.com/Jeseenacodes/Internship/blob/main/Task%203/6.%20Top%20Customers%20by%20Genres.png?raw=true)
 
  7. Top Customers by Total Spend
 ```sql
@@ -170,6 +183,7 @@ ORDER BY total_spent, rank
 LIMIT 10;
 ```
 
+![Dashboard Preview](https://github.com/Jeseenacodes/Internship/blob/main/Task%203/7.%20Top%20customers%20by%20Total%20spend.png?raw=true) 
 
  8. Most and Least Popular Genres
 ```sql
@@ -194,6 +208,7 @@ FROM temp
 INNER JOIN max_rank ON rnk = max_rnk OR rnk = 1;
 ```
 
+![Dashboard Preview](https://github.com/Jeseenacodes/Internship/blob/main/Task%203/8.%20Most%20and%20Least%20Popular%20Genres.png?raw=true) 
 
  9. Employee Supporting Most Customers
 ```sql
@@ -209,7 +224,7 @@ FROM (
 ) x
 WHERE x.rnk = 1;
 ```
-
+![Dashboard Preview](https://github.com/Jeseenacodes/Internship/blob/main/Task%203/9.%20Employee%20who%20has%20supported%20the%20most%20no%20of%20customers.png?raw=true) 
 
 10. Business Summary
 ```sql
@@ -226,6 +241,6 @@ SELECT
   (SELECT SUM(quantity) FROM invoiceline) AS total_tracks_sold,
   (SELECT COUNT(DISTINCT country) FROM customer) AS countries_served;
 ```
-
+![Dashboard Preview](https://github.com/Jeseenacodes/Internship/blob/main/Task%203/10.%20Business%20Summary.png?raw=true) 
 
 
