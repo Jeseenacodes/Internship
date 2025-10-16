@@ -1,1 +1,2 @@
-
+# Olist Business Analysis 
+This project analyzes the Olist e-commerce dataset, a publicly available dataset from a Brazilian online marketplace. It contains detailed information on customer orders, products, payments, and reviews. The objective is to uncover data-driven insights that can inform better business strategies and enhance the overall customer experience. The project includes data cleaning, exploration, and interactive dashboard creation.
