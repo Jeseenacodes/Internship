@@ -15,6 +15,9 @@
 - Time Series Analysis: Users can explore data over time using slicers for years or other periods.
 
   ![Dashboard Preview](https://github.com/Jeseenacodes/Internship/blob/main/Task%205/Super%20Store%20sales%20Analysis%20-%20Power%20BI.png)
-  
+
+  ## View Dashboard
+Explore the dashboard on Power BI Service: [Open Dashboard](https://app.powerbi.com/links/x75KIFGWxL?ctid=509eb15f-795b-4782-bd4e-748dc6ed48df&pbi_source=linkShare)
+
   
 
